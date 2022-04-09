@@ -3,7 +3,7 @@ Notes on how to set up maven and the openJDK on a new windows 10 system.
 
 ## Guidelines
 1. Download the JDK binary.
-2. Extract it to the desire install location.
+2. Extract it to the desired installation location.
 3. Create the JAVA_HOME environment variable on windows. It should point to the installation root, eg `C:\Software\openjdk-11`.
 4. Add `%JAVA_HOME%\bin` to the `Path` environment variable.
 5. Open up a command prompt and check the installation by typing `java -version`
