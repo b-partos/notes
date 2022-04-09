@@ -19,3 +19,14 @@ https://jdk.java.net/java-se-ri/11
 
 ##### Maven install guide
 https://maven.apache.org/install.html
+
+# Setting up SSH for git on a new PC
+## 1. Generate SSH key
+Run in bash: `ssh-keygen -f $KEY_FILE_PATH -t ed25519 -C $GITHUB_EMAIL`
+This generates 2 files, one having no extension (private key) and one having a `.pub` extension (public key). 
+## 2. Make sure the ssh agent is running
+Run in bash: ```eval `ssh-agent -s` ```
+## 3. Add the private part of the generated key
+Run in bash: ``` ssh-add $KEY_FILE_PATH ```
+
+
